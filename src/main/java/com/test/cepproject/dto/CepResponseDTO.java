@@ -1,11 +1,12 @@
 package com.test.cepproject.dto;
 
 import com.test.cepproject.enums.EstadosEnum;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class CepResponseDTO {
 
     private String cep;
@@ -15,5 +16,4 @@ public class CepResponseDTO {
     private String localidade;
     private EstadosEnum uf;
     private Double frete;
-
 }

@@ -48,4 +48,12 @@ public enum EstadosEnum {
 
     }
 
+    public static EstadosEnum getByName(String name) {
+        return Arrays.stream(EstadosEnum.values())
+                .filter(estado -> estado.name().equals(name))
+                .findFirst()
+                .orElseThrow(EstadoNotFoundException::new);
+
+    }
+
 }
