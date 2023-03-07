@@ -1,9 +1,11 @@
 package com.test.cepproject.enums;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 @AllArgsConstructor
-public enum freteEnum {
+@Getter
+public enum FretePorRegiaoEnum {
 
     SUDESTE(7.85),
     CENTRO_OESTE(12.50),
